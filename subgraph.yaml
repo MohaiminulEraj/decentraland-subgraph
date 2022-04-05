@@ -73,7 +73,11 @@ dataSources:
         - Order
       abis:
         - name: Marketplace
+<<<<<<< HEAD
           file: ./abis/marketplace.json
+=======
+          file: ./abis/Marketplace.json
+>>>>>>> 5639f180b4bc0fa2f0d05720782f7cc27b76e390
         - name: LANDRegistry
           file: ./abis/ModifiedLANDRegistry.json
       eventHandlers:

@@ -1,6 +1,7 @@
 {
   "name": "decentraland-subgraph",
   "version": "1.0.0",
+<<<<<<< HEAD
   "repository": "https://github.com/mohaiminuleraj/decentraland-subgraph",
   "license": "MIT",
   "scripts": {
@@ -18,5 +19,20 @@
   },
   "dependencies": {
     "assemblyscript": "^0.20.3"
+=======
+  "repository": "https://github.com/graphprotocol/decentraland-subgraph",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graph codegen --output-dir src/types/",
+    "create-local": "graph create --node http://127.0.0.1:8020 graphprotocol/decentraland",
+    "build": "graph build",
+    "deploy-local": "graph deploy --ipfs http://localhost:5001 --node http://127.0.0.1:8020/ graphprotocol/decentraland",
+    "deploy": "graph deploy --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ graphprotocol/decentraland",
+    "watch-local": "graph deploy --watch --node http://127.0.0.1:8020/ --ipfs http://localhost:5001 graphprotocol/decentraland"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "0.17.1",
+    "@graphprotocol/graph-ts": "0.17.0"
+>>>>>>> 5639f180b4bc0fa2f0d05720782f7cc27b76e390
   }
 }
